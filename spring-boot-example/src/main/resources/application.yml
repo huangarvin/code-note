@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: code-note
+
+zookeeper:
+  address: 172.16.248.133:2181
+logging:
+  level:
+    com.boot.example: debug

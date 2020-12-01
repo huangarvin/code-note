@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://dubbo.apache.org/schema/dubbo
+       http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+  <dubbo:application name="shendengDubboApplication"/>
+  <dubbo:protocol name="dubbo" port="21913"/>
+  <dubbo:registry protocol="zookeeper" address="${zookeeper.address}"/>
+  <!--<dubbo:registry protocol="zookeeper" address="172.16.248.133:2181"/>-->
+
+  <!--公共配置-->
+  <import resource="classpath:/dubbo-consumer.xml"/>
+  <import resource="classpath:/dubbo-provider.xml"/>
+</beans>
