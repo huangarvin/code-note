@@ -1,0 +1,4 @@
+p, pen_admin, data1, GET
+p, yitian, data2, POST
+
+g, /book/:id, book_admin
