@@ -64,7 +64,7 @@
     </dependency>
   </dependencies>
 
-  <build>
+  <build><!--
     <plugins>
       <plugin>
         <groupId>org.jetbrains.kotlin</groupId>
@@ -99,7 +99,7 @@
         </executions>
         <configuration>
           <args>
-            <!--Kotlin: to make sdk-manager access param.name-->
+            &lt;!&ndash;Kotlin: to make sdk-manager access param.name&ndash;&gt;
             <arg>-java-parameters</arg>
             <arg>-Xjsr305=strict</arg>
           </args>
@@ -136,7 +136,7 @@
         </executions>
       </plugin>
     </plugins>
-  </build>
+  --></build>
 
 
 </project>
